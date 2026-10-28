@@ -13,7 +13,7 @@
 - GitHub： https://github.com/goyihuang/family-life-hub ，目前為公開儲存庫，預設分支 `main`。不得提交金鑰或真實家庭資料。
 - Cloudflare 體驗網址： https://family-life-hub.dominic0317.workers.dev 。部署已成功，當時 HTTP 200；上線內容為公開靜態介面。
 - `wrangler.jsonc` 配置 Workers 靜態資產，來源 `public/`；部署命令為 `npx wrangler deploy`。尚未設 GitHub 自動部署。
-- 現有 `public/index.html`、`style.css`、`app.js` 為原生 HTML/CSS/JS，響應式單人介面。資料存於 `localStorage` 的 `family-life-hub-demo-v1`。支持新增／刪除行程、訊息、支出與日記，以及支出／日記關聯行程。日曆目前是列表，回顧是簡單總額。沒有編輯、登入、邀請、權限、D1、多人同步、真正聊天或月份回顧。
+- 現有 `public/index.html`、`style.css`、`app.js` 為原生 HTML/CSS/JS，響應式單人介面。資料存於 `localStorage` 的 `family-life-hub-demo-v1`。支持新增／編輯／刪除行程、訊息、支出與日記，以及支出／日記關聯行程。日曆是可選月份的列表，回顧可按月份查看支出和日記並匯出本機 JSON。沒有登入、邀請、權限、D1、多人同步、真正聊天或完整月曆。
 - 本機和線上為不同瀏覽器來源，資料不共享。此原型不得被視為適合存放私人家庭資料的正式服務。
 - JavaScript 語法檢查曾通過；尚未完成完整瀏覽器操作、多人、權限與端對端測試。
 
